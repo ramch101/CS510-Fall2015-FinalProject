@@ -1,3 +1,4 @@
+# This is the Makefile to compile all the programs that are part of the juliset directory
 CC=gcc
 CFLAGS=-I.
 DEPS = complex.h cplane.h

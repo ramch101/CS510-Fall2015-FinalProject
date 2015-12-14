@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "complex.h"
+/* This program is the definition of various functions that can be performed on compled numbers */
+
 // multiply two complex numbers
 complex mult2(complex a,  complex b) {
 	complex temp;
@@ -7,6 +9,7 @@ complex mult2(complex a,  complex b) {
 	temp.y = a.x*b.y+a.y*b.x;
 	return(temp);
 }
+
 // square two complex numbers
 complex square(complex a) {
 	complex temp;
@@ -14,6 +17,7 @@ complex square(complex a) {
 	temp.y = 2*a.x*a.y;
 	return(temp);
 }
+
 // add two complex numbers
 complex add2(complex a, complex b) {
 	complex temp;
@@ -21,17 +25,20 @@ complex add2(complex a, complex b) {
 	temp.y = a.y+b.y;
 	return(temp);
 }
+
 // Run a juliamap function on two complex numbers
 complex juliamap(complex a, complex b) {
 	complex temp;
 	temp = add2(square(a),b);
 	return(temp);
 }
+
 //print a complex number
 void complex_print(complex z) {
 	printf ("%Lf+i%Lf ",z.x,z.y);
 }
-// test function to make sure the code works
+
+/* test function to make sure the code works
 void test() {
 complex a, b;
 a.x = 2.0;
@@ -56,3 +63,4 @@ printf ("The juliamap of complex numbers are :%Lf %+Lfi\n", juliamap(a,b).x, jul
 complex_print(a);
 complex_print(b);
 }
+*/

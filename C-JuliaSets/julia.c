@@ -3,6 +3,8 @@
 #include "complex.h"
 #include "cplane.h"
 
+/* This is the main program that calls various functions to create data points for juliset */
+
 int main(int argc, char **argv)
 {
 /************************************************************************************
@@ -11,6 +13,7 @@ int main(int argc, char **argv)
 * Output : Returns 0 on success
 * Procedure: Performs operations on complex numbers and prints results.
 ************************************************************************************/
+
 // check for input parameters
 if ( argc != 9) {
    printf ( " The program is expecting 8 input parameters, you entered :%d \n", argc -1);
@@ -46,7 +49,7 @@ cp = new_cplane(xmin,xmax,ymin,ymax,xpoints,ypoints);
     z.y = v.y;
     int m = 0;
     while (1) {
-          // printf("The abolute values is %d \n", abs(z.x+z.y));
+          // printf("The absolute values is %d \n", abs(z.x+z.y));
           z = juliamap(z,c);
           m = ++m;
           if (abs(z.x+z.y) > 2) {

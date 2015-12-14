@@ -1,3 +1,5 @@
+/* This file is header definition for complex planes. This will be called by all the programs in the Juliset directory*/ 
+
 /* structure to store the complex numbers */
 struct COMPLEX {
  long double x;

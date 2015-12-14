@@ -23,7 +23,8 @@ CPLANE new_cplane(const VALUE xmin, const VALUE xmax, const VALUE ymin, const VA
   c.xpoints = xpoints;
   c.ypoints = ypoints;
 
-  // printf("Matrix (row_inc: %Lf, col_inc: %Lf, maxrows: %lu, maxcols: %lu \n", row_inc, col_inc, ypoints, xpoints);
+ // printf("Matrix (row_inc: %Lf, col_inc: %Lf, maxrows: %lu, maxcols: %lu \n", row_inc, col_inc, ypoints, xpoints);
+
 // set the values in the matrix
   for(rows=0; rows<ypoints; rows++) {
     for(cols=0; cols<xpoints; cols++) {
