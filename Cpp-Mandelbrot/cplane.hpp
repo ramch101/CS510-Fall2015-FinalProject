@@ -6,11 +6,13 @@
 #include <boost/numeric/ublas/matrix.hpp>
 #include <boost/numeric/ublas/io.hpp>
 
+// This program is definition of the complex plane 
 typedef unsigned long int INDEX;
 typedef long double VALUE;
 typedef std::complex<long double> MAT_VALUE;
 typedef boost::numeric::ublas::matrix<std::complex<long double> > MAT_TYPE;  
 
+// class definition of complex plane
 class CPLANE {
 	private:
 		VALUE xmin;
