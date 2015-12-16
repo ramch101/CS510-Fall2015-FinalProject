@@ -51,7 +51,7 @@ mat = cplane.set_matrix(xmin,xmax,ymin,ymax,xpoints,ypoints);
     z_val.imag()=0.0;
     int m = 0;
     while (1) {
-          z_val = juliamap(c_val,z_val);
+          z_val = juliamap(z_val,c_val);
           ++m;
          // cout <<"Absolute Value  " << abs(z_val) << endl;
           if (abs(z_val.real()+z_val.imag()) > 2) {
